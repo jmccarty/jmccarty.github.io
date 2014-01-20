@@ -1,0 +1,5 @@
+name: Janet McCarty
+markdown: redcarpet
+exclude: Gemfile Gemfile.lock Procfile config.ru
+redcarpet:
+  extensions: [underline]
