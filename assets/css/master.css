@@ -81,4 +81,4 @@ div#collection-links ul li.active a{ color:#fff;}
 /* Collections */
 div.collection ul{ list-style-type: none; padding-left:5px;text-align:center;}
 div.collection ul li{ margin-bottom:10px; margin-top:10px;}
-div.collection ul li img{ border:1px solid #333;padding:5px;}
+div.collection ul li img{ border:1px solid #333;padding:5px;max-width: 100%; and height: auto;}
