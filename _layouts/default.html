@@ -40,7 +40,7 @@
 		</nav>
 	</div>
 	<div class="container" id="main">
-		<div id="collection-links">
+		<div class="visible-md visible-lg" id="collection-sidebar">
 			<h5>COLLECTIONS</h5>
 			<ul>
 				<li id="creatures"><a href="/collections/creatures">Creatures (6)</a></li>
@@ -49,6 +49,16 @@
 				<li id="ocean"><a href="/collections/ocean">Ocean (5)</a></li>
 				<li id="trees"><a href="/collections/trees">Trees (7)</a></li>
 			</ul>
+		</div>
+		<div class="visible-sm visible-xs" id="collection-select">
+			<select class="form-control" onchange="window.location = '/collections/' + this.options[this.selectedIndex].value;">
+				<option>Choose collection...</option>
+				<option value="creatures">Creatures (6)</option>
+				<option value="flowers">Flowers (6)</option>
+				<option value="misc">Miscellaneous (9)</option>
+				<option value="ocean">Ocean (5)</option>
+				<option value="trees">Trees (7)</option>
+			</select>
 		</div>
 		<div id="content" class="{{ page.container_css_class }}">
 			{{ content }}
